@@ -26,21 +26,5 @@
         {
             this.fetchPhoneNumbers();
         },
-
-        methods: {
-            fetchPhoneNumbers()
-            {
-                let uri = 'http://127.0.0.1:8000/api/phone_numbers';
-                axios.get(uri).then((response) => {
-                  this.items = response.data;
-                });
-            },
-            deleteItem(id)
-            {
-              let uri = `http://localhost:8000/items/${id}`;
-              this.items.splice(id, 1);
-              this.axios.delete(uri);
-            }
-        }
     }
 </script>
