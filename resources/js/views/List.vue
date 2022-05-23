@@ -45,10 +45,6 @@
                   this.numbers = response.data;
                 });
             },
-            redirectToEdit(id)
-            {
-                window.location.href = `/edit/${id}`;
-            },
             deletePhone(index, id)
             {
               this.numbers.splice(index, 1);
