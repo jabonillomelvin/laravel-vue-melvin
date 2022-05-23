@@ -21,10 +21,5 @@
                 items: []
             }
         },
-
-        created: function()
-        {
-            this.fetchPhoneNumbers();
-        },
     }
 </script>
